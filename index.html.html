@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT INDO SUKSES LOGISTIK - Solusi Terintegrasi. Infrastruktur Strategis. Presisi Operasional.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0A3D62',
+                        brandGold: '#E67E22',
+                        brandLightBg: '#F8FAFC',
+                        brandDarkBlue: '#062841'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(10, 61, 98, 0.9), rgba(6, 40, 65, 0.95)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased relative">
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/6289610002730?text=Halo%20PT%20Indo%20Sukses%20Logistik,%20saya%20tertarik%20dengan%20layanan%20Anda." target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110 group relative">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span class="absolute right-16 bg-white text-slate-800 text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-slate-100">Chat WhatsApp</span>
+        </a>
+        <a href="https://www.instagram.com/islog_id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110 group relative">
+            <i class="fa-brands fa-instagram text-2xl"></i>
+            <span class="absolute right-16 bg-white text-slate-800 text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-slate-100">Ikuti Instagram</span>
+        </a>
+    </div>
+
+    <nav class="bg-white text-brandBlue sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="flex items-center justify-center overflow-hidden max-w-[50px] max-h-[50px]">
+                        <img src="logo isl.html.png" alt="Logo PT Indo Sukses Logistik" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold block text-brandBlue tracking-tight leading-none">PT INDO SUKSES LOGISTIK</span>
+                        <span class="text-xs font-semibold text-slate-500 tracking-wider uppercase"></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#beranda" class="hover:text-brandGold transition duration-200">Beranda</a>
+                    <a href="#tentang" class="hover:text-brandGold transition duration-200">Tentang Kami</a>
+                    <a href="#layanan" class="hover:text-brandGold transition duration-200">Layanan</a>
+                    <a href="#fasilitas" class="hover:text-brandGold transition duration-200">Fasilitas Depo</a>
+                    <a href="#coldstorage" class="hover:text-brandGold transition duration-200">Cold Storage</a>
+                    <a href="#armada" class="hover:text-brandGold transition duration-200">Armada</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="#kontak" class="bg-brandBlue hover:bg-brandDarkBlue text-white px-5 py-2.5 rounded-md font-semibold shadow-sm transition duration-200">Hubungi Kami</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brandBlue focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-50 border-t border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-inner">
+            <a href="#beranda" class="block font-medium text-slate-700 hover:text-brandGold py-1">Beranda</a>
+            <a href="#tentang" class="block font-medium text-slate-700 hover:text-brandGold py-1">Tentang Kami</a>
+            <a href="#layanan" class="block font-medium text-slate-700 hover:text-brandGold py-1">Layanan</a>
+            <a href="#fasilitas" class="block font-medium text-slate-700 hover:text-brandGold py-1">Fasilitas Depo</a>
+            <a href="#coldstorage" class="block font-medium text-slate-700 hover:text-brandGold py-1">Cold Storage</a>
+            <a href="#armada" class="block font-medium text-slate-700 hover:text-brandGold py-1">Armada</a>
+            <a href="#kontak" class="block text-center bg-brandBlue text-white py-2 rounded-md font-semibold">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero-bg text-white py-24 lg:py-32 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center lg:text-left">
+            <div class="lg:w-2/3 space-y-6">
+                <span class="bg-brandGold/90 text-white px-3 py-1.5 rounded-md text-xs font-bold uppercase tracking-widest inline-block"></span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Solusi Terintegrasi.<br>Infrastruktur Strategis.<br><span class="text-brandGold">Presisi Operasional.</span>
+                </h1>
+                <p class="text-lg text-slate-200 font-medium max-w-xl mx-auto lg:mx-0">
+                    PT Indo Sukses Logistik adalah penyedia layanan logistik terintegrasi yang berkomitmen memberikan solusi logistik yang aman, efisien, dan terjangkau.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#layanan" class="bg-brandGold hover:bg-amber-600 text-white px-8 py-3.5 rounded-md font-bold text-base shadow-md transition duration-200">Eksplorasi Layanan</a>
+                    <a href="#tentang" class="border-2 border-white/80 hover:bg-white/10 text-white px-8 py-3.5 rounded-md font-bold text-base transition duration-200">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-12 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-start p-4 space-x-4">
+                    <div class="bg-blue-50 text-brandBlue p-3 rounded-xl">
+                        <i class="fa-solid fa-award text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-brandBlue">Standar Tinggi</h3>
+                        <p class="text-sm text-slate-600 mt-1">Dukungan fasilitas berstandar tinggi untuk menjamin keamanan kargo Anda.</p>
+                    </div>
+                </div>
+                <div class="flex items-start p-4 space-x-4">
+                    <div class="bg-blue-50 text-brandBlue p-3 rounded-xl">
+                        <i class="fa-solid fa-map-location-dot text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-brandBlue">Lokasi Strategis</h3>
+                        <p class="text-sm text-slate-600 mt-1">Akses premium ke berbagai pelabuhan utama untuk efisiensi distribusi cepat.</p>
+                    </div>
+                </div>
+                <div class="flex items-start p-4 space-x-4">
+                    <div class="bg-blue-50 text-brandBlue p-3 rounded-xl">
+                        <i class="fa-solid fa-handshake text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-brandBlue">Partner Andalan</h3>
+                        <p class="text-sm text-slate-600 mt-1">Skalabilitas penuh untuk mendukung pertumbuhan ekosistem bisnis Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-20 bg-brandLightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-brandGold pl-4">
+                        <span class="text-sm font-bold uppercase tracking-wider text-brandGold block">Tentang Kami</span>
+                        <h2 class="text-3xl font-extrabold text-brandBlue">Ekosistem Logistik yang Handal & Menyeluruh</h2>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-justify">
+                        PT Indo Sukses Logistik menghadirkan infrastruktur modern terintegrasi demi kelancaran rantai pasok domestik dan internasional Anda. Dengan komitmen operasional tanpa henti, kami memastikan aset berharga Anda dikelola oleh tim profesional menggunakan teknologi dan fasilitas mutakhir.
+                    </p>
+                    <div class="p-5 bg-white rounded-xl shadow-sm border border-slate-100 flex items-center space-x-4">
+                        <div class="bg-amber-50 text-brandGold p-3 rounded-full flex-shrink-0">
+                            <i class="fa-solid fa-clock-rotate-left text-xl"></i>
+                        </div>
+                        <p class="text-sm font-medium text-slate-700">
+                            Kami mengintegrasikan layanan kepabeanan, pergudangan, depo kontainer, hingga multi-moda transportasi darat, laut, dan kereta api secara sinergis.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800" alt="Logistik Gudang" class="rounded-2xl shadow-xl w-full object-cover h-96">
+                    <div class="absolute -bottom-6 -right-6 bg-brandBlue text-white p-6 rounded-2xl shadow-lg hidden sm:block max-w-xs">
+                        <span class="text-3xl font-black text-brandGold block">2026</span>
+                        <span class="text-xs text-slate-300 font-medium">Terus Berinovasi Menghadirkan Presisi Operasional Terbaik di Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-20 bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <a href="file:///C:/Users/hilma/Downloads/gambar%201/Depo%20container%20ISL.html" class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition duration-300 flex flex-col justify-between hover:border-brandGold group">
+        <div class="space-y-4">
+            <div class="text-brandBlue text-3xl group-hover:text-brandGold transition"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <h3 class="text-xl font-bold text-brandBlue group-hover:text-brandGold transition">Depo Container</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Penyimpanan peti kemas strategis dengan dukungan jaringan fasilitas modern bersertifikasi khusus.</p>
+        </div>
+        <div class="text-xs font-semibold text-brandGold mt-4 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
+            Lihat Detail Selengkapnya <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </div>
+    </a>
+
+    <a href="file:///C:/Users/hilma/Downloads/gambar%201/cargo%20transport.html" class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition duration-300 flex flex-col justify-between hover:border-brandGold group">
+        <div class="space-y-4">
+            <div class="text-brandBlue text-3xl group-hover:text-brandGold transition"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3 class="text-xl font-bold text-brandBlue group-hover:text-brandGold transition">Cargo Transportation</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Distribusi darat yang andal menggunakan armada komprehensif untuk pengiriman kargo dry maupun frozen.</p>
+        </div>
+        <div class="text-xs font-semibold text-brandGold mt-4 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
+            Lihat Detail Selengkapnya <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </div>
+    </a>
+
+    <a href="file:///C:/Users/hilma/Downloads/gambar%201/ocean%20freigth.html" class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition duration-300 flex flex-col justify-between hover:border-brandGold group">
+        <div class="space-y-4">
+            <div class="text-brandBlue text-3xl group-hover:text-brandGold transition"><i class="fa-solid fa-ship"></i></div>
+            <h3 class="text-xl font-bold text-brandBlue group-hover:text-brandGold transition">Ocean Freight</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Solusi pengiriman jalur laut yang efisien dan aman, melayani rute domestik maupun internasional.</p>
+        </div>
+        <div class="text-xs font-semibold text-brandGold mt-4 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
+            Lihat Detail Selengkapnya <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </div>
+    </a>
+
+    <a href="URL_PENJELASAN_CUSTOMS" class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition duration-300 flex flex-col justify-between hover:border-brandGold group">
+        <div class="space-y-4">
+            <div class="text-brandBlue text-3xl group-hover:text-brandGold transition"><i class="fa-solid fa-file-invoice"></i></div>
+            <h3 class="text-xl font-bold text-brandBlue group-hover:text-brandGold transition">Customs Clearance</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Pengurusan dokumen kepabeanan terintegrasi penuh yang beroperasi 24/7 untuk kelancaran impor dan ekspor.</p>
+        </div>
+        <div class="text-xs font-semibold text-brandGold mt-4 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
+            Lihat Detail Selengkapnya <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </div>
+    </a>
+
+    <a href="URL_PENJELASAN_STORAGE" class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition duration-300 flex flex-col justify-between hover:border-brandGold group">
+        <div class="space-y-4">
+            <div class="text-brandBlue text-3xl group-hover:text-brandGold transition"><i class="fa-solid fa-warehouse"></i></div>
+            <h3 class="text-xl font-bold text-brandBlue group-hover:text-brandGold transition">Storage Solutions</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Fasilitas pergudangan skala besar mencakup opsi Dry Storage, Cold Storage, hingga Heavy Equipment Storage.</p>
+        </div>
+        <div class="text-xs font-semibold text-brandGold mt-4 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
+            Lihat Detail Selengkapnya <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </div>
+    </a>
+
+    <a href="URL_PENJELASAN_INTERMODAL" class="bg-slate-50 border border-slate-100 p-8 rounded-2xl hover:shadow-lg transition duration-300 flex flex-col justify-between hover:border-brandGold group">
+        <div class="space-y-4">
+            <div class="text-brandBlue text-3xl group-hover:text-brandGold transition"><i class="fa-solid fa-train"></i></div>
+            <h3 class="text-xl font-bold text-brandBlue group-hover:text-brandGold transition">Intermodal Integration</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Integrasi logistik multi-moda langsung menggunakan jalur kereta api kontainer untuk efisiensi distribusi maksimal.</p>
+        </div>
+        <div class="text-xs font-semibold text-brandGold mt-4 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition">
+            Lihat Detail Selengkapnya <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </div>
+    </a>
+
+</div>
+    </section>
+
+    <section id="fasilitas" class="py-20 bg-brandLightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-sm font-bold uppercase tracking-wider text-brandGold">Fasilitas Hub Strategis</span>
+                <h2 class="text-3xl font-extrabold text-brandBlue">Jaringan Depo Utama ISL</h2>
+                <div class="h-1 w-20 bg-brandGold mx-auto rounded"></div>
+            </div>
+
+            <div class="space-y-12">
+                <div class="bg-white border border-slate-200/60 rounded-3xl p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="flex flex-wrap items-center gap-3">
+                            <span class="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold border border-emerald-200"><i class="fa-solid fa-circle-check mr-1"></i> Tersertifikasi Halal</span>
+                            <span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-xs font-bold border border-red-200"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Dangerous Goods (DG) Ready</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brandBlue">Depo Utama: ISL Halal (Tanjung Priok)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Fasilitas terlengkap untuk penanganan Dry, Isotanks, dan Reefer containers. Menawarkan keamanan tingkat tinggi dengan spesifikasi penanganan Dangerous Goods, mencakup sistem hydrants (water & dry), pemantauan CCTV 24/7, mitigasi tumpahan khusus, serta akses langsung ke fasilitas pemadam kebakaran.
+                        </p>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-100 pt-6">
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium uppercase block">Total Area</span>
+                                <span class="text-lg font-bold text-brandBlue">13.127 m²</span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium uppercase block">Cold Storage</span>
+                                <span class="text-lg font-bold text-brandBlue">3.600 m²</span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium uppercase block">Plugging Capacity</span>
+                                <span class="text-lg font-bold text-brandBlue">3.648 m²</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <span class="text-xs font-bold uppercase text-slate-500 block mb-2"><i class="fa-solid fa-radar mr-1 text-brandGold"></i> Proximity Radar (Akses Jarak Pelabuhan)</span>
+                            <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-700 font-semibold">
+                                <div><i class="fa-solid fa-anchor text-slate-400 mr-1"></i> UTC: <span class="text-brandBlue">700 m</span></div>
+                                <div><i class="fa-solid fa-anchor text-slate-400 mr-1"></i> Ter3: <span class="text-brandBlue">1,8 Km</span></div>
+                                <div><i class="fa-solid fa-anchor text-slate-400 mr-1"></i> TPK Koja: <span class="text-brandBlue">2,2 Km</span></div>
+                                <div><i class="fa-solid fa-anchor text-slate-400 mr-1"></i> MAL: <span class="text-brandBlue">2,8 Km</span></div>
+                                <div><i class="fa-solid fa-anchor text-slate-400 mr-1"></i> NPCT-1: <span class="text-brandBlue">4,7 Km</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-slate-100 rounded-2xl h-64 lg:h-full min-h-[300px] flex items-center justify-center relative overflow-hidden shadow-inner">
+                        <img src="Reefer containers.jpeg" alt="Depo Container Utama PT Indo Sukses Logistik" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200/60 rounded-3xl p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6 lg:order-2">
+                        <span class="bg-blue-50 text-brandBlue px-3 py-1 rounded-full text-xs font-bold border border-blue-200"><i class="fa-solid fa-train mr-1"></i> Jalur Kereta Api Multimoda</span>
+                        <h3 class="text-2xl font-bold text-brandBlue">Depo ISL Pasoso: Integrasi Kereta Api Langsung</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Menghadirkan solusi logistik antarmoda terdepan. Bersebelahan langsung dengan Stasiun Pasoso, depo dry container kami mengeliminasi inefisiensi transportasi darat. Rute layanan Jakarta – Semarang kini beroperasi penuh, memberikan rute distribusi yang lebih efisien, terjangkau, dan ramah lingkungan.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 border-t border-slate-100 pt-6">
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium uppercase block">Total Luas Area</span>
+                                <span class="text-lg font-bold text-brandBlue">21.101 m²</span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium uppercase block">Kapasitas Non-Plugging</span>
+                                <span class="text-lg font-bold text-brandBlue">21.101 m²</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <span class="text-xs font-bold uppercase text-slate-500 block mb-2"><i class="fa-solid fa-radar mr-1 text-brandGold"></i> Akses Jarak Terminal Pelabuhan</span>
+                            <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-700 font-semibold">
+                                <div>Ter3: <span class="text-brandBlue">1,4 Km</span></div>
+                                <div>UTC 1: <span class="text-brandBlue">2,2 Km</span></div>
+                                <div>MAL: <span class="text-brandBlue">2,4 Km</span></div>
+                                <div>TPK Koja: <span class="text-brandBlue">3,7 Km</span></div>
+                                <div>NPCT-1: <span class="text-brandBlue">6,2 Km</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-slate-100 rounded-2xl h-64 lg:h-full min-h-[300px] flex items-center justify-center relative overflow-hidden shadow-inner lg:order-1">
+                        <img src="Integrasi Kereta Api Langsung.jpg" alt="Depo ISL Pasoso dengan Akses Kereta Api Multimoda" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200/60 rounded-3xl p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-xs font-bold border border-amber-200"><i class="fa-solid fa-ship mr-1"></i> Pelabuhan Domestik</span>
+                        <h3 class="text-2xl font-bold text-brandBlue">Depo ISL Arsa: Pusat Logistik Pelabuhan Domestik</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Pilihan paling menguntungkan bagi customer yang mengutamakan lokasi, keterjangkauan, dan kecepatan akses ke port domestik utama di area Tanjung Priok. Sangat optimal guna memotong waktu antrean truk dan bongkar muat kargo domestik Anda.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 border-t border-slate-100 pt-6">
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium uppercase block">Luas Area Efektif</span>
+                                <span class="text-lg font-bold text-brandBlue">9.506 m²</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <span class="text-xs font-bold uppercase text-slate-500 block mb-2"><i class="fa-solid fa-location-crosshairs mr-1 text-brandGold"></i> Akses Dermaga Terdekat</span>
+                            <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-700 font-semibold">
+                                <div><i class="fa-solid fa-anchor mr-1 text-slate-400"></i> Kade 106: <span class="text-brandBlue">1,3 km</span></div>
+                                <div><i class="fa-solid fa-border-all mr-1 text-slate-400"></i> Lap 202: <span class="text-brandBlue">1,6 km</span></div>
+                                <div><i class="fa-solid fa-anchor mr-1 text-slate-400"></i> Kade 100: <span class="text-brandBlue">1,7 km</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-slate-100 rounded-2xl h-64 lg:h-full min-h-[300px] flex items-center justify-center relative overflow-hidden shadow-inner">
+                        <img src="Pelabuhan Domestik.html.jpg" alt="Pelabuhan Domestik" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coldstorage" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-sm font-bold uppercase tracking-wider text-brandGold">Fasilitas Pergudangan</span>
+                <h2 class="text-3xl font-extrabold text-brandBlue">Cold Storage Terkalibrasi</h2>
+                <div class="h-1 w-20 bg-brandGold mx-auto rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm space-y-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-bold text-brandBlue">Halal Cold Storage (Tanjung Priok)</h4>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold uppercase">Halal Certified</span>
+                    </div>
+                    <p class="text-xs font-semibold text-slate-500 uppercase"><i class="fa-solid fa-map-pin text-brandGold mr-1"></i> Jl. Sulawesi No 1, Tanjung Priok</p>
+                    <div class="border-t border-slate-200 pt-4 space-y-3 text-sm">
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Luas Fasilitas:</span>
+                            <span class="font-bold text-brandBlue">3.600 m²</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Frozen Room (-15°C s/d -25°C):</span>
+                            <span class="font-semibold text-slate-800 text-right">4 Chamber @ 144 Ton (80m²)</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Chiller Room (0°C s/d 8°C):</span>
+                            <span class="font-semibold text-slate-800 text-right">4 Chamber @ 144 Ton & 4 Chamber @ 240 Ton</span>
+                        </div>
+                        <div class="flex justify-between pb-1">
+                            <span class="text-slate-500">Cool Room (16°C s/d 26°C):</span>
+                            <span class="font-semibold text-slate-800 text-right">4 Chamber @ 144 Ton (80m²)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm space-y-6">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-bold text-brandBlue">Narogong Cold Storage (Bekasi)</h4>
+                        <span class="bg-blue-100 text-brandBlue text-xs px-2.5 py-1 rounded font-bold uppercase">Skala Industri</span>
+                    </div>
+                    <p class="text-xs font-semibold text-slate-500 uppercase"><i class="fa-solid fa-map-pin text-brandGold mr-1"></i> Narogong, Kab. Bekasi</p>
+                    <div class="border-t border-slate-200 pt-4 space-y-3 text-sm">
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Luas Fasilitas:</span>
+                            <span class="font-bold text-brandBlue">9.500 m²</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Frozen Room (-15°C s/d -25°C):</span>
+                            <span class="font-semibold text-slate-800 text-right">Kapasitas Besar Skala Industri</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Chiller Room (0°C s/d 8°C):</span>
+                            <span class="font-semibold text-slate-800 text-right">Tersedia Lengkap</span>
+                        </div>
+                        <div class="flex justify-between pb-1">
+                            <span class="text-slate-500">Total Kapasitas:</span>
+                            <span class="font-bold text-brandBlue">13.400 Posisi Pallet (PP)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-brandDarkBlue text-white p-8 lg:p-12 rounded-3xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4">
+                    <span class="text-xs font-bold text-brandGold uppercase tracking-wider block">Spesifikasi Penanganan Khusus</span>
+                    <h3 class="text-2xl font-bold">Heavy Equipment Storage & Handling</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Kami menyediakan area penanganan khusus alat berat di kawasan Pelabuhan Tanjung Priok dengan dukungan tim profesional bersertifikat. Siklus penanganan kami mencakup presisi maksimal dalam ekstraksi (Stripping & Stuffing), perakitan unit di lokasi oleh teknisi terlatih (Assembling & Kalibrasi), serta verifikasi teknis akhir sebelum mobilisasi aman ke pelanggan.
+                    </p>
+                    <div class="flex flex-wrap gap-4 text-xs font-semibold text-slate-200 pt-2">
+                        <span class="bg-white/10 px-3 py-1.5 rounded"><i class="fa-solid fa-square-poll-horizontal text-brandGold mr-1"></i> Lapangan Outdoor 5.000 m²</span>
+                        <span class="bg-white/10 px-3 py-1.5 rounded"><i class="fa-solid fa-gears text-brandGold mr-1"></i> Reach Stacker, Crane, Forklift (3-15 Ton)</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 grid grid-cols-1 gap-3">
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center space-x-3">
+                        <div class="text-brandGold text-lg font-bold">01</div>
+                        <div class="text-sm font-medium">Bongkar muat alat berat on chasis & Breakbulk</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center space-x-3">
+                        <div class="text-brandGold text-lg font-bold">02</div>
+                        <div class="text-sm font-medium">Stripping & Stuffing Kargo Proteksi Maksimal</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center space-x-3">
+                        <div class="text-brandGold text-lg font-bold">03</div>
+                        <div class="text-sm font-medium">Perakitan (Assembling) & Kalibrasi Unit di Lokasi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="armada" class="py-20 bg-brandLightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-sm font-bold uppercase tracking-wider text-brandGold">Cargo Transportation</span>
+                <h2 class="text-3xl font-extrabold text-brandBlue">Armada Transportasi Darat Terintegrasi</h2>
+                <div class="h-1 w-20 bg-brandGold mx-auto rounded"></div>
+                <p class="text-slate-600 text-sm max-w-xl mx-auto">
+                    Mendukung mobilitas kargo melintasi Jabodetabek, manajemen reposisi, hingga penyewaan unit. Kapabilitas armada kami memastikan kargo dry maupun frozen tiba tepat waktu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm text-center space-y-2">
+                    <div class="text-brandBlue text-3xl mx-auto mb-1"><i class="fa-solid fa-truck-moving"></i></div>
+                    <div class="text-2xl font-black text-brandBlue">11 Unit</div>
+                    <div class="text-sm font-bold text-slate-500 uppercase tracking-wide">Trailer</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm text-center space-y-2">
+                    <div class="text-brandBlue text-3xl mx-auto mb-1"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                    <div class="text-2xl font-black text-brandBlue">6 Unit</div>
+                    <div class="text-sm font-bold text-slate-500 uppercase tracking-wide">Blindvan</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm text-center space-y-2">
+                    <div class="text-brandBlue text-3xl mx-auto mb-1"><i class="fa-solid fa-truck"></i></div>
+                    <div class="text-2xl font-black text-brandBlue">2 Unit</div>
+                    <div class="text-sm font-bold text-slate-500 uppercase tracking-wide">CDE Long</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm text-center space-y-2">
+                    <div class="text-brandBlue text-3xl mx-auto mb-1"><i class="fa-solid fa-truck-front"></i></div>
+                    <div class="text-2xl font-black text-brandBlue">1 Unit</div>
+                    <div class="text-sm font-bold text-slate-500 uppercase tracking-wide">CDD Jumbo</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm text-center space-y-2">
+                    <div class="text-snowflake text-sky-500 text-3xl mx-auto mb-1"><i class="fa-regular fa-snowflake"></i></div>
+                    <div class="text-2xl font-black text-brandBlue">1 Unit</div>
+                    <div class="text-sm font-bold text-slate-500 uppercase tracking-wide">CDD Frozen</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm text-center space-y-2">
+                    <div class="text-brandBlue text-3xl mx-auto mb-1"><i class="fa-solid fa-truck-flatbed"></i></div>
+                    <div class="text-2xl font-black text-brandBlue">1 Unit</div>
+                    <div class="text-sm font-bold text-slate-500 uppercase tracking-wide">CDE Standard</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm text-center space-y-2">
+                    <div class="text-snowflake text-sky-500 text-3xl mx-auto mb-1"><i class="fa-solid fa-snowflake"></i></div>
+                    <div class="text-2xl font-black text-brandBlue">1 Unit</div>
+                    <div class="text-sm font-bold text-slate-500 uppercase tracking-wide">Frozen Traga</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="border-l-4 border-brandGold pl-4">
+                        <span class="text-sm font-bold uppercase tracking-wider text-brandGold block">Hubungi Kami</span>
+                        <h2 class="text-3xl font-extrabold text-brandBlue">Mari Diskusikan Solusi Logistik Bisnis Anda</h2>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Punya pertanyaan mengenai kapasitas fasilitas, tarif pengiriman, atau ingin bermitra jangka panjang? Hubungi kami melalui kontak resmi atau kirimkan pesan langsung melalui form berikut.
+                    </p>
+                    <ul class="space-y-4 text-sm text-slate-700 font-medium">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot text-brandGold mt-1 mr-3 text-base flex-shrink-0"></i>
+                            <span>Jl. Raya Sulawesi No.01, RT.7/RW.16, Tj. Priok, Jakarta Utara, DKI Jakarta 14310</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope text-brandGold mr-3 text-base flex-shrink-0"></i>
+                            <span>cs@indosukseslogistik.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope text-brandGold mr-3 text-base flex-shrink-0"></i>
+                            <span>market@indosukseslogistik.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-clock text-brandGold mr-3 text-base flex-shrink-0"></i>
+                            <span>Senin - Minggu: 07.00 - 22.00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-7 bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm">
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah terkirim.');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Nama Lengkap</label>
+                                <input type="text" placeholder="Masukkan nama Anda" class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brandBlue" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Nama Perusahaan</label>
+                                <input type="text" placeholder="PT / CV / Instansi" class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brandBlue" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Email Kantor</label>
+                                <input type="email" placeholder="name@company.com" class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brandBlue" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase mb-1">No. WhatsApp/Telepon</label>
+                                <input type="tel" placeholder="Contoh: 0812xxxx" class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brandBlue" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Kebutuhan Layanan</label>
+                            <select class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brandBlue">
+                                <option>Sewa Depo Container / Plugging Reefer</option>
+                                <option>Cold Storage (Tanjung Priok / Narogong)</option>
+                                <option>Cargo Transportation (Armada Darat)</option>
+                                <option>Customs Clearance & Pelabuhan Domestik</option>
+                                <option>Heavy Equipment Handling & Perakitan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Pesan / Detail Kebutuhan</label>
+                            <textarea rows="4" placeholder="Tuliskan spesifikasi kargo, rute, atau rincian volume penanganan..." class="w-full bg-white border border-slate-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-brandBlue" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brandBlue hover:bg-brandDarkBlue text-white font-bold py-3 rounded-md shadow transition duration-200">Kirim Formulir Penawaran</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sosmed-feed" class="py-16 bg-brandLightBg border-t border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
+                <div>
+                    <span class="text-sm font-bold uppercase tracking-wider text-brandGold block">Koneksi Digital</span>
+                    <h2 class="text-3xl font-extrabold text-brandBlue">Aktivitas Terbaru Kami</h2>
+                </div>
+                <div class="flex gap-3">
+                    <a href="https://linkedin.com/company/indosukseslogistik" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white border border-slate-200 text-slate-700 hover:text-[#0A66C2] px-4 py-2 rounded-xl text-sm font-semibold shadow-sm transition">
+                        <i class="fa-brands fa-linkedin text-lg mr-2"></i> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/islog_id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white border border-slate-200 text-slate-700 hover:text-[#E1306C] px-4 py-2 rounded-xl text-sm font-semibold shadow-sm transition">
+                        <i class="fa-brands fa-instagram text-lg mr-2"></i> Instagram
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm group">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" alt="Post Sosmed" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute top-3 right-3 bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center"><i class="fa-brands fa-instagram"></i></div>
+                    </div>
+                    <div class="p-4 space-y-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">Instagram • 2 Hari Lalu</span>
+                        <p class="text-xs text-slate-600 line-clamp-2">Optimalkan efisiensi pengiriman dengan intermodal kereta api kontainer ISL Pasoso. Bebas macet dan ramah lingkungan!</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm group">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=400" alt="Post Sosmed" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute top-3 right-3 bg-[#0A66C2] text-white w-8 h-8 rounded-full flex items-center justify-center"><i class="fa-brands fa-linkedin-in"></i></div>
+                    </div>
+                    <div class="p-4 space-y-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">LinkedIn • 5 Hari Lalu</span>
+                        <p class="text-xs text-slate-600 line-clamp-2">PT Indo Sukses Logistik berkomitmen mendukung rantai pasok industri makanan melalui fasilitas Halal Cold Storage berkapasitas besar.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm group">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=400" alt="Post Sosmed" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute top-3 right-3 bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center"><i class="fa-brands fa-instagram"></i></div>
+                    </div>
+                    <div class="p-4 space-y-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">Instagram • 1 Minggu Lalu</span>
+                        <p class="text-xs text-slate-600 line-clamp-2">Kesiapan armada darat kami melayani kebutuhan distribusi kargo dry dan frozen secara berkala di area Jabodetabek.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm group">
+                    <div class="h-48 bg-slate-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" alt="Post Sosmed" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute top-3 right-3 bg-[#0A66C2] text-white w-8 h-8 rounded-full flex items-center justify-center"><i class="fa-brands fa-linkedin-in"></i></div>
+                    </div>
+                    <div class="p-4 space-y-2">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">LinkedIn • 2 Minggu Lalu</span>
+                        <p class="text-xs text-slate-600 line-clamp-2">Mengenal lebih dekat proses perakitan (assembling) dan penanganan muatan alat berat (heavy equipment handling) di depo ISL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brandDarkBlue text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="space-y-3">
+                    <span class="text-white font-black text-xl tracking-tight block">ISL LOGISTIK</span>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Penyedia layanan logistik terintegrasi dengan dukungan infrastruktur pelabuhan premium, intermodal kereta api, cold storage bersertifikat halal, serta armada transportasi darat komprehensif.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Navigasi Cepat</h4>
+                    <ul class="space-y-1.5 text-xs">
+                        <li><a href="#tentang" class="hover:text-brandGold transition">Tentang Kami</a></li>
+                        <li><a href="#layanan" class="hover:text-brandGold transition">Ekosistem Layanan</a></li>
+                        <li><a href="#fasilitas" class="hover:text-brandGold transition">Fasilitas Depo Utama</a></li>
+                        <li><a href="#coldstorage" class="hover:text-brandGold transition">Cold Storage Terkalibrasi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Pusat Informasi</h4>
+                    <p class="text-xs leading-relaxed">
+                        Jl. Raya Sulawesi No.01, Tj. Priok, Jakarta Utara, DKI Jakarta 14310<br>
+                        Email: cs@indosukseslogistik.com / market@indosukseslogistik.com
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-6 text-center text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 PT INDO SUKSES LOGISTIK. All rights reserved.</p>
+                <div class="flex space-x-4 text-base">
+                    <a href="https://linkedin.com/company/indosukseslogistik" target="_blank" rel="noopener noreferrer" class="hover:text-[#0A66C2] transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/people/Indo-Suskses-Logistik/100073600692295/" target="_blank" rel="noopener noreferrer" class="hover:text-[#1877F2] transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/islog_id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="hover:text-[#E1306C] transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
